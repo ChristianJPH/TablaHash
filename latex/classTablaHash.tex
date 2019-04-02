@@ -1,0 +1,77 @@
+\hypertarget{classTablaHash}{}\section{Referencia de la Clase Tabla\+Hash}
+\label{classTablaHash}\index{Tabla\+Hash@{Tabla\+Hash}}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTablaHash_a4a1e8a8ce9beddf153293efe6bb137ae}{Tabla\+Hash} (int RowS, int CellS, char $\ast$dispersion, char $\ast$exploracion, float fc)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{classTablaHash_ad936073d56db493bc327aee20ab30769}{Load\+Table} (int tam, vector$<$ \hyperlink{classDNI}{D\+NI} $>$ \&nums)
+\begin{DoxyCompactList}\small\item\em Carga en la tabla los \hyperlink{classDNI}{D\+NI} iniciales. \end{DoxyCompactList}\item 
+bool \hyperlink{classTablaHash_a063c478c2acb24fdba7bbc90c9d6bda9}{Buscar} (\hyperlink{classDNI}{D\+NI} \&key)
+\begin{DoxyCompactList}\small\item\em Busca en la tabla. \end{DoxyCompactList}\item 
+bool \hyperlink{classTablaHash_a3030b51cfd5a0e50d796cc6c2383ab33}{Insertar} (\hyperlink{classDNI}{D\+NI} \&key)
+\begin{DoxyCompactList}\small\item\em Inserta en la tabla. \end{DoxyCompactList}\item 
+bool \hyperlink{classTablaHash_ae6ff3c4b4dce04e4eac89ba63dfc6faa}{visitada} (int i)
+\begin{DoxyCompactList}\small\item\em Lleva la cuenta de las filas de celdas que se han visitado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classTablaHash_a4a1e8a8ce9beddf153293efe6bb137ae}\label{classTablaHash_a4a1e8a8ce9beddf153293efe6bb137ae}} 
+\index{Tabla\+Hash@{Tabla\+Hash}!Tabla\+Hash@{Tabla\+Hash}}
+\index{Tabla\+Hash@{Tabla\+Hash}!Tabla\+Hash@{Tabla\+Hash}}
+\subsubsection{\texorpdfstring{Tabla\+Hash()}{TablaHash()}}
+{\footnotesize\ttfamily Tabla\+Hash\+::\+Tabla\+Hash (\begin{DoxyParamCaption}\item[{int}]{RowS,  }\item[{int}]{CellS,  }\item[{char $\ast$}]{dispersion,  }\item[{char $\ast$}]{exploracion,  }\item[{float}]{fc }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase. 
+
+Inicializa EL tamaño de la tabla, inicializa el vector de celdas y detecta la función de exploración y dispersión que se quiere utilizar 
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classTablaHash_a063c478c2acb24fdba7bbc90c9d6bda9}\label{classTablaHash_a063c478c2acb24fdba7bbc90c9d6bda9}} 
+\index{Tabla\+Hash@{Tabla\+Hash}!Buscar@{Buscar}}
+\index{Buscar@{Buscar}!Tabla\+Hash@{Tabla\+Hash}}
+\subsubsection{\texorpdfstring{Buscar()}{Buscar()}}
+{\footnotesize\ttfamily bool Tabla\+Hash\+::\+Buscar (\begin{DoxyParamCaption}\item[{\hyperlink{classDNI}{D\+NI} \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Busca en la tabla. 
+
+Busca con el índice que devuelve la función de dispersión, si lo encuentra devuelve true (encontrado), si no lo encuentra recorre el vector de celdas, en caso de que se haya visitado ya una posición devuelve false, por el contrario si no se ha visitado, busca con el índice que devuelve la función de exploración, si lo encuentra devuelve true, sino almacena en visitadas la posición que se ha visitado. \mbox{\Hypertarget{classTablaHash_a3030b51cfd5a0e50d796cc6c2383ab33}\label{classTablaHash_a3030b51cfd5a0e50d796cc6c2383ab33}} 
+\index{Tabla\+Hash@{Tabla\+Hash}!Insertar@{Insertar}}
+\index{Insertar@{Insertar}!Tabla\+Hash@{Tabla\+Hash}}
+\subsubsection{\texorpdfstring{Insertar()}{Insertar()}}
+{\footnotesize\ttfamily bool Tabla\+Hash\+::\+Insertar (\begin{DoxyParamCaption}\item[{\hyperlink{classDNI}{D\+NI} \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Inserta en la tabla. 
+
+Si en el índice no están llenas las celdas, inserta el dni y devuelve true, si están llenas itera mientras que las celdas estén llenas va llamando a la función de exploración y almacenando el nuevo indice, si itera más veces que el tamaño del vector devuelve false, si sale del bucle inserta el valor en la tabla y devuelve true. \mbox{\Hypertarget{classTablaHash_ad936073d56db493bc327aee20ab30769}\label{classTablaHash_ad936073d56db493bc327aee20ab30769}} 
+\index{Tabla\+Hash@{Tabla\+Hash}!Load\+Table@{Load\+Table}}
+\index{Load\+Table@{Load\+Table}!Tabla\+Hash@{Tabla\+Hash}}
+\subsubsection{\texorpdfstring{Load\+Table()}{LoadTable()}}
+{\footnotesize\ttfamily void Tabla\+Hash\+::\+Load\+Table (\begin{DoxyParamCaption}\item[{int}]{tam,  }\item[{vector$<$ \hyperlink{classDNI}{D\+NI} $>$ \&}]{nums }\end{DoxyParamCaption})}
+
+
+
+Carga en la tabla los \hyperlink{classDNI}{D\+NI} iniciales. 
+
+se le pasa un tamaño y un vector de \hyperlink{classDNI}{D\+NI}\textquotesingle{}s e inserta ese número de dni\textquotesingle{}s \mbox{\Hypertarget{classTablaHash_ae6ff3c4b4dce04e4eac89ba63dfc6faa}\label{classTablaHash_ae6ff3c4b4dce04e4eac89ba63dfc6faa}} 
+\index{Tabla\+Hash@{Tabla\+Hash}!visitada@{visitada}}
+\index{visitada@{visitada}!Tabla\+Hash@{Tabla\+Hash}}
+\subsubsection{\texorpdfstring{visitada()}{visitada()}}
+{\footnotesize\ttfamily bool Tabla\+Hash\+::visitada (\begin{DoxyParamCaption}\item[{int}]{cellpos }\end{DoxyParamCaption})}
+
+
+
+Lleva la cuenta de las filas de celdas que se han visitado. 
+
+Se le pasa una posición del vector de celdas y se recorre el vector de visitadas si la posición se encuentra en el vector de visitadas se devuelve true (pues esta posición ya se ha visitado) en caso contrario se devuelve false (Esta función es cara muy cara!!) 
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+H\+P\+P/Tabla.\+hpp\item 
+C\+P\+P/Tabla.\+cpp\end{DoxyCompactItemize}

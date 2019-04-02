@@ -1,0 +1,80 @@
+\hypertarget{classCELDAS}{}\section{Referencia de la plantilla de la Clase C\+E\+L\+D\+AS$<$ T $>$}
+\label{classCELDAS}\index{C\+E\+L\+D\+A\+S$<$ T $>$@{C\+E\+L\+D\+A\+S$<$ T $>$}}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCELDAS_aae69874190ac05952611963e5a3e833b}\label{classCELDAS_aae69874190ac05952611963e5a3e833b}} 
+\hyperlink{classCELDAS_aae69874190ac05952611963e5a3e833b}{C\+E\+L\+D\+AS} (int N\+Celdas)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCELDAS_a05cfbfe288a8f671843f7e2c55f9c5c7}\label{classCELDAS_a05cfbfe288a8f671843f7e2c55f9c5c7}} 
+{\bfseries C\+E\+L\+D\+AS} (const \hyperlink{classCELDAS}{C\+E\+L\+D\+AS} \&old\+\_\+obj)
+\item 
+\mbox{\Hypertarget{classCELDAS_aa441a713c1c4b3cf44651a9aed80bca4}\label{classCELDAS_aa441a713c1c4b3cf44651a9aed80bca4}} 
+int \hyperlink{classCELDAS_aa441a713c1c4b3cf44651a9aed80bca4}{size} ()
+\begin{DoxyCompactList}\small\item\em Número de Celdas. \end{DoxyCompactList}\item 
+void \hyperlink{classCELDAS_a0bf3899f87a9f9123a00bb0021c6d9e7}{ver} (int i)
+\begin{DoxyCompactList}\small\item\em Muestra por pantalla la celda pasada por parámetro. \end{DoxyCompactList}\item 
+bool \hyperlink{classCELDAS_a42432f9d2dfe9836317b2ea90adca95c}{Full} ()
+\begin{DoxyCompactList}\small\item\em Comprueba si todas las celdas están rellenas. \end{DoxyCompactList}\item 
+bool \hyperlink{classCELDAS_a3e64f7ae44f98fd184cf29807964ac38}{buscar} (T key)
+\begin{DoxyCompactList}\small\item\em Buscar una clave en las celdas. \end{DoxyCompactList}\item 
+bool \hyperlink{classCELDAS_a2d867ad43fcbebc0eb22b3bb7c039f4a}{insertar} (T key)
+\begin{DoxyCompactList}\small\item\em Insertar una clave en las celdas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCELDAS_a889beda74c13a5213d7d945b3213b4b7}\label{classCELDAS_a889beda74c13a5213d7d945b3213b4b7}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classCELDAS}{C\+E\+L\+D\+AS} \&obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classCELDAS_a3e64f7ae44f98fd184cf29807964ac38}\label{classCELDAS_a3e64f7ae44f98fd184cf29807964ac38}} 
+\index{C\+E\+L\+D\+AS@{C\+E\+L\+D\+AS}!buscar@{buscar}}
+\index{buscar@{buscar}!C\+E\+L\+D\+AS@{C\+E\+L\+D\+AS}}
+\subsubsection{\texorpdfstring{buscar()}{buscar()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \hyperlink{classCELDAS}{C\+E\+L\+D\+AS}$<$ T $>$\+::buscar (\begin{DoxyParamCaption}\item[{T}]{key }\end{DoxyParamCaption})}
+
+
+
+Buscar una clave en las celdas. 
+
+Recorre todas las celdas que están ocupadas, comprobando si la celda es igual a la clave dada, en tal caso devuelve verdadero (Ha encontrado la clave), si no la encuentra devuelve falso. \mbox{\Hypertarget{classCELDAS_a42432f9d2dfe9836317b2ea90adca95c}\label{classCELDAS_a42432f9d2dfe9836317b2ea90adca95c}} 
+\index{C\+E\+L\+D\+AS@{C\+E\+L\+D\+AS}!Full@{Full}}
+\index{Full@{Full}!C\+E\+L\+D\+AS@{C\+E\+L\+D\+AS}}
+\subsubsection{\texorpdfstring{Full()}{Full()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \hyperlink{classCELDAS}{C\+E\+L\+D\+AS}$<$ T $>$\+::Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Comprueba si todas las celdas están rellenas. 
+
+Comprueba si el número actual de celdas es igual al número total de celdas que existen, devolviendo verdadero o falso. \mbox{\Hypertarget{classCELDAS_a2d867ad43fcbebc0eb22b3bb7c039f4a}\label{classCELDAS_a2d867ad43fcbebc0eb22b3bb7c039f4a}} 
+\index{C\+E\+L\+D\+AS@{C\+E\+L\+D\+AS}!insertar@{insertar}}
+\index{insertar@{insertar}!C\+E\+L\+D\+AS@{C\+E\+L\+D\+AS}}
+\subsubsection{\texorpdfstring{insertar()}{insertar()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \hyperlink{classCELDAS}{C\+E\+L\+D\+AS}$<$ T $>$\+::insertar (\begin{DoxyParamCaption}\item[{T}]{key }\end{DoxyParamCaption})}
+
+
+
+Insertar una clave en las celdas. 
+
+En caso de que no estén todas las celdas completas, se le añade al vector de claves la clave introducida y se aumentan el tamaño de celdas ocupadas (Full\+Cells), en caso de que no se pueda introducir esta función devuelve falso, verdadero si la introduce. \mbox{\Hypertarget{classCELDAS_a0bf3899f87a9f9123a00bb0021c6d9e7}\label{classCELDAS_a0bf3899f87a9f9123a00bb0021c6d9e7}} 
+\index{C\+E\+L\+D\+AS@{C\+E\+L\+D\+AS}!ver@{ver}}
+\index{ver@{ver}!C\+E\+L\+D\+AS@{C\+E\+L\+D\+AS}}
+\subsubsection{\texorpdfstring{ver()}{ver()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classCELDAS}{C\+E\+L\+D\+AS}$<$ T $>$\+::ver (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Muestra por pantalla la celda pasada por parámetro. 
+
+Dado una celda (i), muestra la clave que hay en ella haciendo uso de la función ver de la clase \hyperlink{classDNI}{D\+NI}. 
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+H\+P\+P/Celdas.\+hpp\end{DoxyCompactItemize}

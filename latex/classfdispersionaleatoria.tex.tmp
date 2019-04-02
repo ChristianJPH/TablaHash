@@ -1,0 +1,26 @@
+\hypertarget{classfdispersionaleatoria}{}\section{Referencia de la Clase fdispersionaleatoria}
+\label{classfdispersionaleatoria}\index{fdispersionaleatoria@{fdispersionaleatoria}}
+
+
+Diagrama de herencias de fdispersionaleatoria
+% FIG 0
+
+
+Diagrama de colaboración para fdispersionaleatoria\+:
+% FIG 1
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classfdispersionaleatoria_a151b528e9a65b0d44d46dcddbbce34fe}\label{classfdispersionaleatoria_a151b528e9a65b0d44d46dcddbbce34fe}} 
+{\bfseries fdispersionaleatoria} (int tam)
+\item 
+\mbox{\Hypertarget{classfdispersionaleatoria_adff85e5f2dc3c04bdd0adcf1c87357ed}\label{classfdispersionaleatoria_adff85e5f2dc3c04bdd0adcf1c87357ed}} 
+int {\bfseries operator()} (const \hyperlink{classDNI}{D\+NI} \&key)
+\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+H\+P\+P/fdispersionaleatoria.\+h\item 
+C\+P\+P/fdispersionaleatoria.\+cpp\end{DoxyCompactItemize}
