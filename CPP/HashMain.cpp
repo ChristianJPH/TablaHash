@@ -41,8 +41,49 @@ int main(int argc, char* argv[]){
   //carga la tabla con los N dni
   table.LoadTable(N,TestDNI);
 
-//Busca los valores en la tabla comprobando que realmente se han introducido
+   unsigned int min,max=0,acc=0;
+   table.Buscar(TestDNI[0]);
+   min = DNI::getcomp();
 
+  bool n;
+
+  for(int i=0; i<N;i++){
+    n = table.Buscar(TestDNI[rand()%N]);
+    if(!n)
+      std::cout << "Perdido\n";
+
+      if((DNI::getcomp()- acc) > max)
+        max = DNI::getcomp() - acc;
+
+      acc = DNI::getcomp();
+  }
+std::cout << "min: " << min << "\n";
+std::cout << "max: " << max << "\n";
+std::cout << "acc: " << acc << "\n";
+
+DNI::clearcomp();
+table.Buscar(TestDNI[N]);
+min = DNI::getcomp();
+min=0;max=0;acc=0;
+
+for(int i=0;i<N;i++){
+
+    table.Buscar(TestDNI[N+rand()%N]);
+
+    if(DNI::getcomp() - acc < min)
+      min = DNI::getcomp() - acc;
+    if(DNI::getcomp() - acc > max)
+      max = DNI::getcomp() - acc;
+
+    acc = DNI::getcomp();
+}
+
+std::cout << "min: " << min << "\n";
+std::cout << "max: " << max << "\n";
+std::cout << "acc: " << acc << "\n";
+
+//Busca los valores en la tabla comprobando que realmente se han introducido
+/*
   bool n;
 
   for(int i=0;i<N;i++){
@@ -50,7 +91,7 @@ int main(int argc, char* argv[]){
     n = table.Buscar(TestDNI[i]);
 }
 std::cout << "Comparaciones: " << DNI::getcomp();
-
+*/
 //obtiene el tiempo que se ha estado ejecutando y le resta el tiempo que ha tardado en crear los dni
 time = clock() - time;
 std::cout << "tiempo consumido para la carga de la tabla: " << ((float)time)/CLOCKS_PER_SEC << " segundos.\n";

@@ -49,6 +49,13 @@ std::ostream& operator<< (std::ostream& os, const DNI& obj){
 }
 
 /*!
+* Resetea las comparaciones
+*/
+void DNI::clearcomp(){
+  comparaciones = 0;
+}
+
+/*!
 * devuelve el dni, que ya es un unsigned int
 */
 DNI::operator unsigned int(){return dni;}

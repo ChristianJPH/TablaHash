@@ -34,6 +34,7 @@ class DNI{
     int getsize()const;
     ///devuelve las comparaciones
     static unsigned long int getcomp();
+    static void clearcomp();
     ///devuelve el dni
     unsigned int getdni()const{return dni;}
 
